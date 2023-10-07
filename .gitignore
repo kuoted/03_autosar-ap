@@ -86,3 +86,4 @@ tools/FlameGraph
 #WORKSPACE
 
 .DS_Store
+*.bkp
