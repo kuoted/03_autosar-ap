@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+  <ADMIN-DATA>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>OEM</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>Documentation</SHORT-NAME>
+          <ELEMENTS>
+            <DOCUMENTATION>
+              <SHORT-NAME>DecompositionExample</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">Decomposition Example</L-4>
+              </LONG-NAME>
+                <DOCUMENTATION-CONTENT>
+                  <STRUCTURED-REQ>
+                    <SHORT-NAME>A</SHORT-NAME>
+                    <CATEGORY>REQUIREMENT_ITEM</CATEGORY>
+                    <DATE>2019-07-19</DATE>
+                    <ISSUED-BY>OEM</ISSUED-BY>
+                    <TYPE>valid</TYPE>
+                    <IMPORTANCE>High</IMPORTANCE>
+                  </STRUCTURED-REQ>
+                  <STRUCTURED-REQ>
+                    <SHORT-NAME>B</SHORT-NAME>
+                    <CATEGORY>REQUIREMENT_ITEM</CATEGORY>
+                    <TRACE-REFS>
+                      <TRACE-REF DEST="STRUCTURED-REQ">OEM/Documentation/DecompositionExample/A</TRACE-REF>
+                    </TRACE-REFS>
+                    <DATE>2019-07-19</DATE>
+                    <ISSUED-BY>OEM</ISSUED-BY>
+                    <TYPE>valid</TYPE>
+                    <IMPORTANCE>High</IMPORTANCE>
+                    <DEPENDENCIES>
+                     <TRACE>
+                       <SHORT-NAME>DECOMPB1</SHORT-NAME>
+                       <LONG-NAME>
+                         <L-4 L="EN">Decomposition element 1</L-4>
+                       </LONG-NAME>
+                       <CATEGORY>DECOMPOSITION</CATEGORY>
+                       <TRACE-REFS>
+                         <TRACE-REF DEST="STRUCTURED-REQ">OEM/Documentation/DecompositionExample/B1</TRACE-REF>
+                       </TRACE-REFS>
+                     </TRACE>
+                     <TRACE>
+                       <SHORT-NAME>DECOMPB2</SHORT-NAME>
+                       <LONG-NAME>
+                         <L-4 L="EN">Decomposition element 2</L-4>
+                       </LONG-NAME>
+                       <CATEGORY>DECOMPOSITION</CATEGORY>
+                       <TRACE-REFS>
+                         <TRACE-REF DEST="STRUCTURED-REQ">OEM/Documentation/DecompositionExample/B2</TRACE-REF>
+                       </TRACE-REFS>
+                     </TRACE>
+                    </DEPENDENCIES>
+                  </STRUCTURED-REQ>
+                  <STRUCTURED-REQ>
+                    <SHORT-NAME>B1</SHORT-NAME>
+                    <CATEGORY>REQUIREMENT_ITEM</CATEGORY>
+                    <DATE>2019-07-19</DATE>
+                    <ISSUED-BY>OEM</ISSUED-BY>
+                    <TYPE>valid</TYPE>
+                    <IMPORTANCE>High</IMPORTANCE>
+                  </STRUCTURED-REQ>
+                  <STRUCTURED-REQ>
+                    <SHORT-NAME>B2</SHORT-NAME>
+                    <CATEGORY>REQUIREMENT_ITEM</CATEGORY>
+                    <DATE>2019-07-19</DATE>
+                    <ISSUED-BY>OEM</ISSUED-BY>
+                    <TYPE>valid</TYPE>
+                    <IMPORTANCE>High</IMPORTANCE>
+                  </STRUCTURED-REQ>
+               </DOCUMENTATION-CONTENT>
+            </DOCUMENTATION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
